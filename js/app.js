@@ -3,91 +3,106 @@ let products = [
     id: 1,
     title: "Next.js is the future of React",
     data: "2h ago",
-    status: ["Draft", "Pablished"],
+    categories: "Draft",
+    categories1: "Pablished",
   },
   {
     id: 2,
     title: "Why do you need Lint?",
     data: "sunday",
-    status: ["Pablished", null],
+    categories: "Pablished",
+    categories1: null,
   },
   {
     id: 3,
     title: "React.js vs Vue.js, what’s better for you next project?",
     data: "yesterday",
-    status: ["Draft", null],
+    categories: "Draft",
+    categories1: null,
   },
   {
     id: 4,
     title: "Next.js is the future of React",
     data: "4 week ago",
-    status: ["Pablished", null],
+    categories: "Pablished",
+    categories1: null,
   },
   {
     id: 5,
     title: "Pixel-perfect development at Zoftify. Essential steps to take.",
     data: "4h ago",
-    status: ["Draft", "Pablished"],
+    categories: "Draft",
+    categories1: "Pablished",
   },
   {
     id: 6,
     title: "Why do you need Lint?",
     data: "2 week ago",
-    status: ["Pablished", "Draft"],
+    categories: "Pablished",
+    categories1: "Draft",
   },
   {
     id: 7,
     title: "Next.js is the future of React",
     data: "yesterday",
-    status: ["Draft", null],
+    categories: "Draft",
+    categories1: null,
   },
   {
     id: 8,
     title: "Pixel-perfect development at Zoftify. Essential steps to take.",
     data: "3 week ago",
-    status: ["Pablished", null],
+    categories: "Pablished",
+    categories1: null,
   },
   {
     id: 9,
     title: "React.js vs Vue.js, what’s better for you next project?",
     data: "5 week ago",
-    status: ["Draft", "Pablished"],
+    categories: "Draft",
+    categories1: "Pablished",
   },
   {
     id: 10,
     title: "Why do you need Lint?",
     data: "6h ago",
-    status: ["Pablished", "Draft"],
+    categories: "Pablished",
+    categories1: "Draft",
   },
   {
     id: 11,
     title: "Pixel-perfect development at Zoftify. Essential steps to take.",
     data: "11 week ago",
-    status: ["Draft", null],
+    categories: "Draft",
+    categories1: null,
   },
   {
     id: 12,
     title: "Next.js is the future of React",
     data: "7 week ago",
-    status: ["Pablished", null],
+    categories: "Pablished",
+    categories1: null,
   },
   {
     id: 13,
     title: "React.js vs Vue.js, what’s better for you next project?",
     data: "yesterday",
-    status: ["Draft", "Pablished"],
+    categories: "Draft",
+    categories1: "Pablished",
   },
   {
     id: 14,
     title: "Why do you need Lint?",
     data: "2 week ago",
-    status: ["Pablished", "Draft"],
+    categories: "Pablished",
+    categories1: "Draft",
   },
   {
     id: 15,
     title: "Next.js is the future of React",
     data: "2h ago",
-    status: ["Draft",null],
+    categories: "Draft",
+    categories1: null,
   },
 ];
 
@@ -128,8 +143,8 @@ function render(items) {
     thId.innerText = item.id;
     tdTitle.innerText = item.title;
     tdData.innerText = item.data;
-    option1.innerText = item.status[0];     
-    option2.innerText = item.status[1]; 
+    option1.innerText = item.categories;     
+    option2.innerText = item.categories1; 
     
         select.appendChild(option1);
         select.appendChild(option2);
